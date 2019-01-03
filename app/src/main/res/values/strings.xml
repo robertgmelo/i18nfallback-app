@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name" translatable="false">i18nFallbackApp</string>
+    <string name="resource1">Resource 1 (en-US)</string>
+    <string name="resource2">Resource 2 (en-US)</string>
+</resources>

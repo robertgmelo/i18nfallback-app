@@ -1,5 +1,29 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name" translatable="false">i18nFallbackApp</string>
-    <string name="resource1">Resource 1 (en-US)</string>
-    <string name="resource2">Resource 2 (en-US)</string>
+    <string name="resource1" maxLength="50">Resource 1 (default)</string>
+    <string name="resource2" maxLength="25">Resource 2 (default)</string>
+    <string name="resource3" maxLength="150">Resource 3 (default)</string>
+    <string name="expanded_contact_info" translatable="false"><xliff:g id="contact_info">%1$s</xliff:g> - <xliff:g id="phone_number">%2$s</xliff:g></string>
+
+    <plurals name="delete_file">
+        <item quantity="one">Удаление <xliff:g id="count">%1$d</xliff:g> файла…</item>
+        <item quantity="few">Удаление <xliff:g id="count">%1$d</xliff:g> файлов…</item>
+        <item quantity="many">Удаление <xliff:g id="count">%1$d</xliff:g> файлов…</item>
+        <item quantity="other">Удаление <xliff:g id="count">%1$d</xliff:g> файла…</item>
+    </plurals>
+    <string name="delete_file" formatted="false">
+        "{count, plural,
+            one {Удаление # файла…}
+            few {Удаление # файлов…}
+            many {Удаление # файлов…}
+            other {Удаление # файла…}
+        }"
+    </string>
+    <string name="channel_name">Channel (default)</string>
+    <string name="channel_description">Channel desc (default)</string>
+    <string name="notification_title">My notification (default)</string>
+    <string name="notification_content">Notification content (default)</string>
+    <string name="notification_content_phone"><annotation id="phone_info"><xliff:g id="info">%1$s</xliff:g></annotation> \u2705</string>
+    <string name="notification_content_non_phone"><annotation id="phone_info"><xliff:g id="info">%1$s</xliff:g></annotation>\n\n<annotation id="phone_status"><xliff:g id="status">Valid Number \u2705</xliff:g></annotation></string>
+    <string name="notification_action">Action</string>
 </resources>

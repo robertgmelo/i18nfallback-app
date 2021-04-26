@@ -10,6 +10,9 @@
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        android:textStyle="bold"
+        tools:drawableStart=""
         tools:text="Hello World!" />
 
     <TextView
@@ -23,4 +26,82 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Hello World!" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ksp_title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="3dp"
+            android:autoSizeMaxTextSize="28sp"
+            android:autoSizeMinTextSize="13sp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/display_title"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="true" />
+
+        <TextClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:format12Hour="h:mm"
+            android:format24Hour="kk:mm" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/recording_record"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            tools:text="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Qua, 5 de out" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Qui, 6 de out" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="Sex, 7 de out, 14:30" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:onClick="onNotification"
+            />
+    </LinearLayout>
+
 </LinearLayout>

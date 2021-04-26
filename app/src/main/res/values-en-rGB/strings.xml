@@ -1,4 +1,5 @@
 <resources>
     <string name="resource1">Resource 1 (en-GB)</string>
     <string name="resource2">Resource 2 (en-GB)</string>
+<!--    <string name="resource3">Resource 3 (en-GB)</string>-->
 </resources>
